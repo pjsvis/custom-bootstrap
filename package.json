@@ -10,11 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "bower": "^1.6.5",
+    "express": "^4.13.3",
     "gulp": "^3.9.0",
-    "gulp-less": "^3.0.2"
+    "gulp-less": "^3.0.2",
+    "less": "^2.5.3",
+    "stream-combiner2": "^1.1.1"
   },
   "repository": {
-  "type": "git",
-  "url": "git://github.com/pjsvis/custom-bootstrap.git"
-}
+    "type": "git",
+    "url": "git://github.com/pjsvis/custom-bootstrap.git"
+  }
 }

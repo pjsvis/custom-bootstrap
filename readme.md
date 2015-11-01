@@ -3,11 +3,13 @@
 1. Adapted from a [Code Project article](http://www.codeproject.com/Articles/594098/How-to-customize-Twitter-Bootstrap-to-fit-your-web) and the [Bootswatch workflow](http://www.smashingmagazine.com/2013/03/customizing-bootstrap/) 
 with an [Example page](http://www.bootstrapzero.com/bootstrap-template/full-example)
 
-1. Install dependencies
+1. Install [node](https://nodejs.org/en/)
+		
+1. Using the command line in the dev/custom-bootstrap folder  install the dev dependencies
 
 		npm install
 
-1. Set the gulp task watcher running
+1. In Visual Studio Code set the gulp task watcher running
 
 		CTRL-SHIFT-B
 		
@@ -19,4 +21,4 @@ with an [Example page](http://www.bootstrapzero.com/bootstrap-template/full-exam
 		
 		localhost:45000/#!watch
 
-1. Modify custom/custom-bootstrap.less
+1. Modify custom/custom-bootstrap.less and see the updates in real-time.
