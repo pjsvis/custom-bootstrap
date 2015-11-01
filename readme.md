@@ -6,6 +6,6 @@
 		node server.js
 		localhost:45000/#!watch
 
-1. Modified as per [Bootswatch workflow](http://www.smashingmagazine.com/2013/03/customizing-bootstrap/
+1. Modified as per [Bootswatch workflow](http://www.smashingmagazine.com/2013/03/customizing-bootstrap/)
 
 1. [Example page](http://www.bootstrapzero.com/bootstrap-template/full-example)
