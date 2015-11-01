@@ -1,7 +1,7 @@
 ## Customise Bootstrap
 
-1. Adapted from a [Code Project article](http://www.codeproject.com/Articles/594098/How-to-customize-Twitter-Bootstrap-to-fit-your-web) and the [Bootswatch workflow](http://www.smashingmagazine.com/2013/03/customizing-bootstrap/) 
-with an [Example page](http://www.bootstrapzero.com/bootstrap-template/full-example)
+Adapted from a [Code Project article](http://www.codeproject.com/Articles/594098/How-to-customize-Twitter-Bootstrap-to-fit-your-web) and the [Bootswatch workflow](http://www.smashingmagazine.com/2013/03/customizing-bootstrap/) 
+with an [Example page](http://www.bootstrapzero.com/bootstrap-template/full-example). Do the following:
 
 1. Install [node](https://nodejs.org/en/)
 		
@@ -21,4 +21,4 @@ with an [Example page](http://www.bootstrapzero.com/bootstrap-template/full-exam
 		
 		localhost:45000/#!watch
 
-1. Modify custom/custom-bootstrap.less and see the updates in real-time.
+1. Modify custom/custom-variables.less and custom-other.less and see the updates in real-time.
