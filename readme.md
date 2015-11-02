@@ -23,3 +23,5 @@ with an [Example page](http://www.bootstrapzero.com/bootstrap-template/full-exam
 		localhost:45000/#!watch
 
 1. Modify custom-variables.less and custom-other.less and see the updates in real-time.
+
+1. Find colors at [FindTheData](http://colors.findthedata.com/)
