@@ -7,6 +7,7 @@ with an [Example page](http://www.bootstrapzero.com/bootstrap-template/full-exam
 		
 1. Using the command line in the dev/custom-bootstrap folder  install the dev dependencies
 
+		npm install gulp -g
 		npm install
 
 1. In Visual Studio Code set the gulp task watcher running
