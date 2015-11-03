@@ -3175,26 +3175,26 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #85c473;
-  border-color: #76bc61;
+  background-color: #95cc85;
+  border-color: #85c473;
 }
 .btn-success:focus,
 .btn-success.focus {
   color: #fff;
-  background-color: #66b54f;
-  border-color: #3d6f2f;
+  background-color: #76bc61;
+  border-color: #478136;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #66b54f;
-  border-color: #579e43;
+  background-color: #76bc61;
+  border-color: #61b04a;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #66b54f;
-  border-color: #579e43;
+  background-color: #76bc61;
+  border-color: #61b04a;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -3206,8 +3206,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #fff;
-  background-color: #579e43;
-  border-color: #3d6f2f;
+  background-color: #61b04a;
+  border-color: #478136;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3232,11 +3232,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #85c473;
-  border-color: #76bc61;
+  background-color: #95cc85;
+  border-color: #85c473;
 }
 .btn-success .badge {
-  color: #85c473;
+  color: #95cc85;
   background-color: #fff;
 }
 .btn-info {
@@ -4909,11 +4909,11 @@ a.label:focus {
   background-color: #004e83;
 }
 .label-success {
-  background-color: #85c473;
+  background-color: #95cc85;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #66b54f;
+  background-color: #76bc61;
 }
 .label-info {
   background-color: #04C3C0;
@@ -5178,7 +5178,7 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
-  background-color: #85c473;
+  background-color: #95cc85;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
