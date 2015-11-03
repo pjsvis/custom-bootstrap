@@ -1,5 +1,5 @@
 // Less configuration
-var combiner = require('stream-combiner2');
+var plumber = require('gulp-plumber');
 var gulp = require('gulp');
 var less = require('gulp-less');
 

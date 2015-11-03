@@ -1,12 +1,45 @@
+// FIS Colors
+@primary: 				#007d8a;
+@green:                 #8dc63f;
+@blue:                  #00aec7;
+@purple:                #72246c;
+@orange:                #e7a614;
+@red:                   #aa0061;
+
+
+
+// Text
+@pageText:          	#464645;
+@formLabels:        	#777363;
+@dataValue:         	#222;
+@links :            	#2a5db0;
+@visited :          	#3888bc;
+@emphasis :         	#72246C;
+@softLink :         	#666666;
+@error:             	#990000;
+
+// Border
+@border:            	#ccc;
+
+// Background
+@backgroundDark:    	#767676;
+@backgroundMedium:  	#ddd;
+@backgroundLight:   	#f5f5f5;
+
+/*
+◦Arial, Helvetica, sans-serif 
+◦16px (1em) (100%) with exceptions such as Buttons, Banner navigation and Tabs 
+◦Minimum: 14px
+*/
+
 // Custom colors
-@blue:                  #04C3C0;
-@blueDark:              #006DB6;
-@green:                 #51933E;
-@red:                   #8C1A1F;
-@yellow:                #E3A00C;
-@orange:                #DC7605;
-@pink:                  #AD2C77;
-@purple:                #5C3CA2;
+@brand-primary:     	 @primary;
+@brand-success:          @green;
+@brand-info:             @blue;
+@brand-warning:          @orange;
+@brand-danger:           @red;
+
+@white:                 #FFF9E6;
 
 //== Colors
 //
@@ -24,15 +57,31 @@
 @brand-warning:          @yellow;
 @brand-danger:           lighten(@red, 20%);
 
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:              #FFF9E6;
-
-//@body-bg:              yellow;
+@body-bg:              @gray-lighter;
 
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @pageText;
 
+
+
+// Wells
+// -------------------------
+@wellBackground:                  #f5f5f5;
+
+// Navbar
+// -------------------------
+@navbar-height:                   50px;
+@navbarBackgroundHighlight:       mix(@primary, @gray-lighter,40%);
+@navbarText:                      @white;
+@navbarLinkColor:                 @navbarText;
+@navbarLinkColorHover:            darken(@blue,20%);
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarBackground:                @navbarBackgroundHighlight;
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
