@@ -63,12 +63,12 @@
 	"isShellCommand": true,
 	"tasks": [
 		{
-			"taskName": "default",
+			"taskName": "less",
 			// Make this the default build command.
 			"isBuildCommand": true,
 			// Show the output window only if unrecognized errors occur.
 			"showOutput": "always",
-			"isWatching": true,
+			"isWatching": false,
 			// Use the standard less compilation problem matcher.
 			"problemMatcher": "$lessCompile"
 		}

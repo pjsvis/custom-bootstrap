@@ -34,10 +34,10 @@
 
 // Custom colors
 @brand-primary:     	 @primary;
-@brand-success:          @green;
+@brand-success:          darken(@green, 10%);
 @brand-info:             @blue;
-@brand-warning:          @orange;
-@brand-danger:           @red;
+@brand-warning:          darken(@orange, 20%);
+@brand-danger:           lighten(@red, 50%);
 
 @white:                 #FFF9E6;
 
@@ -49,13 +49,7 @@
 @gray-dark:              lighten(@gray-base, 20%);   
 @gray:                   lighten(@gray-base, 33.5%); 
 @gray-light:             lighten(@gray-base, 46.7%); 
-@gray-lighter:           lighten(@gray-base, 93.5%); 
-
-@brand-primary:          @blueDark;
-@brand-success:          lighten(@green, 25%);
-@brand-info:             @blue;
-@brand-warning:          @yellow;
-@brand-danger:           lighten(@red, 20%);
+@gray-lighter:           lighten(@gray-base, 93.5%);
 
 
 //== Scaffolding
@@ -63,7 +57,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:              @gray-lighter;
+@body-bg:              @white;
 
 //** Global text color on `<body>`.
 @text-color:            @pageText;
@@ -77,11 +71,11 @@
 // Navbar
 // -------------------------
 @navbar-height:                   50px;
-@navbarBackgroundHighlight:       mix(@primary, @gray-lighter,40%);
+@navbarBackgroundHighlight:       @gray-lighter;
 @navbarText:                      @white;
 @navbarLinkColor:                 @navbarText;
 @navbarLinkColorHover:            darken(@blue,20%);
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
-@navbarBackground:                @navbarBackgroundHighlight;
+@navbarBackground:                @primary;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);

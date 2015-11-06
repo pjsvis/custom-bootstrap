@@ -189,6 +189,8 @@ Desktop.ini
 .idea/tasks.xml
 .idea/dictionaries
 .idea/typescript-compiler.xml
+.idea/*.xml
+.idea/
 
 # TypeScript
 typings
