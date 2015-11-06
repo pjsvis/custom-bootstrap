@@ -5,8 +5,9 @@ var gutil = require('gulp-util');
 var less = require('gulp-less');
 
 gulp.task('default', function(){
-    gulp.src('custom/custom-bootstrap.less');
-    less();
+    gulp.src('custom/custom-bootstrap.less')
+    .pipe(less())
+    .pipe(gulp.dest('custom'));
 });
 
 gulp.task('combined', function() {
