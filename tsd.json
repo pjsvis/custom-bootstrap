@@ -9,7 +9,7 @@
       "commit": "eb59a40d3c2f3257e34ec2ede181046230814a41"
     },
     "jquery/jquery.d.ts": {
-      "commit": "eb59a40d3c2f3257e34ec2ede181046230814a41"
+      "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
     },
     "serve-static/serve-static.d.ts": {
       "commit": "eb59a40d3c2f3257e34ec2ede181046230814a41"
@@ -34,6 +34,9 @@
     },
     "q/Q.d.ts": {
       "commit": "eb59a40d3c2f3257e34ec2ede181046230814a41"
+    },
+    "angularjs/angular.d.ts": {
+      "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
     }
   }
 }

@@ -1,96 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-		
-		<meta charset="utf-8">
-    <link rel="icon" type="image/x-gif" href="favicon.gif" />
-    <title>Custom Bootstrap Template</title>
-    <meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>    -->
-     <script src="node_modules/less/dist/less.min.js"></script>    
-     <link rel="stylesheet" type="text/css" href="custom/custom-bootstrap.css" />
-     <link rel="stylesheet" href="css/styles.css">
-  </head>
 
-  <body>
+<head>
 
-<div class="container">
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-gif" href="favicon.gif" />
+  <title>Project Template</title>
+  <meta name="generator" content="Bootply" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>    -->
+  <script src="node_modules/less/dist/less.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom/custom-bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-<!-- Bootstrap 3 Navbar
+<body ng-app="app">
+
+  <div class="container">
+
+    <!-- Bootstrap 3 Navbar
 ================================================== -->
-<section id="navbar">
-	
-  	<div class="container">
+    <section id="navbar">
+      <div ng-include="'app/nav/nav.tpl.html'"></div>
+    </section>
 
-		<nav class="navbar navbar-inverse" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#!watch">Custom Bootstrap</a>
+    <section>
+
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading panel-title">
+            Introduction
+          </div>
+          <div class="panel-body">
+            <p>
+              This project template allows for:
+            </p>
+            <ol>
+              <li>Easy customisation of Bootstrap styles</li>
+              <li>Auto page update on file content changes</li>
+              <li>Type checking and a module system for Javascript via Typescript</li>
+              <li>File concatentation via the Typescript compiler</li>
+              <li>Source maps for easy debugging of style and scripts</li>
+            </ol>
+            <p>The following panels describe how each of the above features work.</p>
+          </div>
         </div>
-      
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#!watch">Home</a></li>
-            <li><a href="#!watch">Link</a></li>
-            <li><a href="#!watch">Link</a></li>
-            <li class="dropdown">
-              <a href="#!watch" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#!watch">Action</a></li>
-                <li><a href="#!watch">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#!watch">Link</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
+      </div>
 
-	</div>
-	
-</section>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading panel-title">
+            Visual Studio Code (VSC)
+          </div>
+          <div class="panel-body">
+            <p>
+              Visual Studio Code (VSC) provides a rich coding experience for client side assets.
+            </p>
+            <p>Alt-Shift-F formats code and html.</p>
+            <p>The VSC task runner can run Gulp tasks and rerun those tasks when files change.</p>
+            <p>Alt-Shit-B runs the VSC default task</p>
+            <p>Alt-Shift-T runs the VSC test task</p>
+          </div>
+        </div>
+      </div>
 
-<section>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading panel-title">
+            Gulp
+          </div>
+          <div class="panel-body">
+            <p>
+              Gulp is a task runner that can be called from the VSC task runner or from a CLI
+          </div>
+        </div>
+      </div>
+  </div>
 
-<!-- Bootstrap 3 Buttons
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        Bootstrap
+      </div>
+      <div class="panel-body">
+        Various components are used
+        <p>For example node, npm, bower, and less</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        Typescript
+      </div>
+      <div class="panel-body">
+        <p>This project uses the TypeScript compiler which is set up to compile all of the *.ts files to Javascript and concatenate
+          the *.js files into a single build.js file in the root folder.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        Typescript Definitions
+      </div>
+      <div class="panel-body">
+        <p>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        NPM and Bower
+      </div>
+      <div class="panel-body">
+        <p>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        WebPack
+      </div>
+      <div class="panel-body">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        Development
+      </div>
+      <div class="panel-body">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        Build for Production
+      </div>
+      <div class="panel-body">
+
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+
+  <!-- Bootstrap 3 Buttons
 ================================================== -->
-<section id="buttons">
-  
-  <ul class="the-buttons clearfix">
-      <li><a class="btn btn-xs btn-primary" href="#">btn-xs</a></li> 	
+  <section id="buttons">
+
+    <ul class="the-buttons clearfix">
+      <li><a class="btn btn-xs btn-primary" href="#">btn-xs</a></li>
       <li><a class="btn btn-sm btn-primary" href="#">btn-sm</a></li>
       <li><a class="btn btn-primary" href="#">btn</a></li>
       <li><a class="btn btn-lg btn-primary" data-toggle="modal" href="#myModal">modal</a></li>
-  </ul>
- 
-  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-  <div class="modal-content">
-      <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h3 id="myModalLabel">Modal header</h3>
+    </ul>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Modal header</h3>
+          </div>
+          <div class="modal-body">
+            <p>One fine body…</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-          <p>One fine body…</p>
-      </div>
-      <div class="modal-footer">
-          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-          <button class="btn btn-primary">Save changes</button>
-      </div>
-  </div>
-  </div>
-  </div>
-  
-  <ul class="the-buttons clearfix">
+    </div>
+
+    <ul class="the-buttons clearfix">
       <li><a class="btn btn-default" href="#">Default</a></li>
       <li><a class="btn btn-primary" href="#">Primary</a></li>
       <li><a class="btn btn-success" href="#">Success</a></li>
@@ -98,7 +200,7 @@
       <li><a class="btn btn-warning" href="#">Warning</a></li>
       <li><a class="btn btn-danger" href="#">Danger</a></li>
       <li><a class="btn btn-primary disabled" href="#">Disabled</a></li>
-      <li><a class="btn btn-link" href="#">Link</a></li>	
+      <li><a class="btn btn-link" href="#">Link</a></li>
       <li>
         <!-- Single button -->
         <div class="btn-group">
@@ -115,245 +217,121 @@
         </div>
       </li>
       <li><a class="btn btn-info" href="#"><i class="glyphicon glyphicon-map-marker"></i> Icon</a></li>
-  </ul>
-  
-</section>
-
-<!-- Icons
-================================================== -->
-<section id="icons">
-  <div class="row">
-   
-  	<ul class="the-icons clearfix">
-      <li><i class="glyphicon glyphicon-transfer space-right"></i>Simulator</li>
-      <li><i class="glyphicon glyphicon-random space-right"></i>Traces</li>
-      <li><i class="glyphicon glyphicon-tags space-right"></i>Test Suite</li>
-      <li><i class="glyphicon glyphicon-subscript space-right"></i>Test Case</li>
-      <li><i class="glyphicon glyphicon-user space-right"></i>User</li>
-    
     </ul>
-  </div>
-</section>
-  
-  <!-- List Group -->
-  
-  <section>
-    
-    <div class="col-md-3">
-      <div class="panel-primary">
-        <div class="panel-heading"><i class="glyphicon glyphicon-user space-right"></i>Testers</div>
-      <ul class="list-group">
-        <li class="list-group-item">Tester 1</li>
-        <li class="list-group-item">Tester 2</li>
-        <li class="list-group-item active">Tester 3</li>
-        <li class="list-group-item">Tester 4</li>
-      </ul>
-      </div>
-    </div>
-    
-    <div class="col-md-3">
-      <div class="panel-primary">
-        <div class="panel-heading"><i class="glyphicon glyphicon-transfer space-right"></i>Simulators</div>
-      <ul class="list-group">
-        <li class="list-group-item">AMEX Simulator</li>
-        <li class="list-group-item">Access Simulator</li>
-        <li class="list-group-item">MasterCard Simulator</li>
-        <li class="list-group-item active">Diners Club Simulator</li>
-      </ul>
-      </div>
-    </div>
-    
-    <div class="col-md-3">
-      <div class="panel-primary">
-        <div class="panel-heading"><i class="glyphicon glyphicon-tags space-right"></i>Test Suites</div>
-      <ul class="list-group">
-        <li class="list-group-item">AMEX Test Suite 1</li>
-        <li class="list-group-item active">Access Test Suite 1</li>
-        <li class="list-group-item">MasterCard Test Suite</li>
-        <li class="list-group-item">Diners Club Test Suite</li>
-      </ul>
-      </div>
-    </div>  
-    
-    <div class="col-md-3">
-      <div class="panel-primary">
-        <div class="panel-heading"><i class="glyphicon glyphicon-subscript space-right"></i>Test Cases</div>
-      <ul class="list-group">
-        <li class="list-group-item active">AMEX Test Suite 1</li>
-        <li class="list-group-item">Access Test Suite 1</li>
-        <li class="list-group-item">MasterCard Test Suite</li>
-        <li class="list-group-item">Diners Club Test Suite</li>
-      </ul>
-      </div>
-    </div>         
+
   </section>
-  
-  
-  <!--Table -->
-<table class="table table-striped table-hover ">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Column heading</th>
-      <th>Column heading</th>
-      <th>Column heading</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="info">
-      <td>3</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="success">
-      <td>4</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="danger">
-      <td>5</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="warning">
-      <td>6</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-    <tr class="active">
-      <td>7</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
-  </tbody>
-</table> 
 
-<!-- Forms
+
+
+
+
+  <!-- Forms
 ================================================== -->
-<section id="forms">
-  <div class="page-header">
-    <h4>Forms</h4>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h3>Form Inline</h3>
-   
-<div class="well">      
-<form class="form-horizontal">
-  <fieldset>
-    <legend>Legend</legend>
-    <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-      <span style="opacity: 1; left: 417px; top: 12px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAECSURBVHjapNK9K8UBFIfxD12im8LEYLgZjcpgUFgUCUlZTJRkMpqUxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqdvvpvnim0+mcZ/ieU9U6tySBNEbQjBpMoANZnGIdl4VLKcm8YCPqbgzhAT1ox1mSrFpxjtCHLdygH5tJgymlMYhhtKH+r6FishYsYBpN0dvFHu5wi9okWToC/0AmcpqM+pd7PKMRDajDNb5xlS97Qyem0BsL8IT9uOAhXpGLvL/wGXO5fFkOO7FwHvJtLOOilGALM8vE1d6xiFVlkP8aXTjAI8bKFeXLBuJ3shjFiQpIYR6zWMFaXFOlsnHM4Ng/+RkAdVE2mEeC7WYAAAAASUVORK5CYII=); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
+  <section id="forms">
+    <div class="page-header">
+      <h4>Forms</h4>
     </div>
-    <div class="form-group">
-      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-      <div class="col-lg-10">
-        <input type="password" class="form-control ULN_PASSWORD_GOOD" id="inputPassword" placeholder="Password">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Checkbox
-          </label>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Form Inline</h3>
+
+        <div class="well">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>Legend</legend>
+              <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                  <span style="opacity: 1; left: 417px; top: 12px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAECSURBVHjapNK9K8UBFIfxD12im8LEYLgZjcpgUFgUCUlZTJRkMpqUxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqdvvpvnim0+mcZ/ieU9U6tySBNEbQjBpMoANZnGIdl4VLKcm8YCPqbgzhAT1ox1mSrFpxjtCHLdygH5tJgymlMYhhtKH+r6FishYsYBpN0dvFHu5wi9okWToC/0AmcpqM+pd7PKMRDajDNb5xlS97Qyem0BsL8IT9uOAhXpGLvL/wGXO5fFkOO7FwHvJtLOOilGALM8vE1d6xiFVlkP8aXTjAI8bKFeXLBuJ3shjFiQpIYR6zWMFaXFOlsnHM4Ng/+RkAdVE2mEeC7WYAAAAASUVORK5CYII=); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                  <input type="password" class="form-control ULN_PASSWORD_GOOD" id="inputPassword" placeholder="Password">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Checkbox
+                    </label>
+                  </div>
+                  <span style="opacity: 1; left: 417px; top: 12px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAEBSURBVHjapNK9K4UBFMfxD12im8JkMdyMRmUwKCyKhKQsJspgcjerxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqSY/ui+90Op3zHX7n1OTzeSlkMYpW1GESnSjgBGu4+L2Ukc4z1qPuwTDu0YsOnKbJapXmEP3YxDUGsJE2mFEeQxhBOxr/Giola8MCZtASvR3s4hY3qE+TZSPwd+Qip6mof7jDE5rRhAZc4QuXSdkrujCNvliAR+zFBQ/wgmLk/YmPmCsmZUVsx8JZyLewhPNygv2dWS6u9oZFrKiA5Gt0Yx8PGK9UlJQNxu8UMIZjVZDBPOawjNW4pmplE5jFkX/yPQDFYTbukzAYUgAAAABJRU5ErkJggg==); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
+              </div>
+              <div class="form-group">
+                <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+                <div class="col-lg-10">
+                  <textarea class="form-control" rows="3" id="textArea"></textarea>
+                  <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label">Radios</label>
+                <div class="col-lg-10">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one is this
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="select" class="col-lg-2 control-label">Selects</label>
+                <div class="col-lg-10">
+                  <select class="form-control" id="select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <br>
+                  <select multiple="" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="reset" class="btn btn-default">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
-      <span style="opacity: 1; left: 417px; top: 12px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAEBSURBVHjapNK9K4UBFMfxD12im8JkMdyMRmUwKCyKhKQsJspgcjerxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqSY/ui+90Op3zHX7n1OTzeSlkMYpW1GESnSjgBGu4+L2Ukc4z1qPuwTDu0YsOnKbJapXmEP3YxDUGsJE2mFEeQxhBOxr/Giola8MCZtASvR3s4hY3qE+TZSPwd+Qip6mof7jDE5rRhAZc4QuXSdkrujCNvliAR+zFBQ/wgmLk/YmPmCsmZUVsx8JZyLewhPNygv2dWS6u9oZFrKiA5Gt0Yx8PGK9UlJQNxu8UMIZjVZDBPOawjNW4pmplE5jFkX/yPQDFYTbukzAYUgAAAABJRU5ErkJggg==); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
-    </div>
-    <div class="form-group">
-      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-      <div class="col-lg-10">
-        <textarea class="form-control" rows="3" id="textArea"></textarea>
-        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
       </div>
-    </div>
-    <div class="form-group">
-      <label class="col-lg-2 control-label">Radios</label>
-      <div class="col-lg-10">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            Option one is this
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="select" class="col-lg-2 control-label">Selects</label>
-      <div class="col-lg-10">
-        <select class="form-control" id="select">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <br>
-        <select multiple="" class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="reset" class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
-    </div>
-  </div>
 
-</section>
+  </section>
 
 
-<!-- Miscellaneous
+  <!-- Miscellaneous
 ================================================== -->
-<section id="miscellaneous">
-  <div class="page-header">
-    <h1>Miscellaneous</h1>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
-
-      <h3 id="breadcrumbs">Breadcrumbs</h3>
-      <ul class="breadcrumb">
-        <li><a href="#">Home</a> <span class="divider"></span></li>
-        <li><a href="#">Library</a> <span class="divider"></span></li>
-        <li class="active">Data</li>
-      </ul>
+  <section id="miscellaneous">
+    <div class="page-header">
+      <h1>Miscellaneous</h1>
     </div>
-    <div class="col-md-4">
-      <h3 id="pagination">Pagination</h3>
+
+    <div class="row">
+      <div class="col-md-4">
+
+        <h3 id="breadcrumbs">Breadcrumbs</h3>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a> <span class="divider"></span></li>
+          <li><a href="#">Library</a> <span class="divider"></span></li>
+          <li class="active">Data</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3 id="pagination">Pagination</h3>
         <ul class="pagination">
           <li><a href="#">«</a></li>
           <li><a href="#">1</a></li>
@@ -363,207 +341,208 @@
           <li><a href="#">5</a></li>
           <li><a href="#">»</a></li>
         </ul>
-    </div>
-    
-    <div class="col-md-4">
-      <h3 id="pager">Pagers</h3>
-        
+      </div>
+
+      <div class="col-md-4">
+        <h3 id="pager">Pagers</h3>
+
         <ul class="pager">
           <li><a href="#">Previous</a></li>
           <li><a href="#">Next</a></li>
         </ul>
-        
+
         <ul class="pager">
           <li class="previous disabled"><a href="#">? Older</a></li>
           <li class="next"><a href="#">Newer ?</a></li>
         </ul>
+      </div>
     </div>
-  </div>
 
 
-  <!-- Navs
+    <!-- Navs
   ================================================== -->
 
-  <div class="row">
-    <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-4">
 
-  <ul class="nav nav-pills">
-  <li class="active"><a href="">Home</a></li>
-  <li><a ng-href="">Profile</a></li>
-  <li class="disabled"><a href="">Disabled</a></li>
-  <li class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="">Home</a></li>
+          <li><a ng-href="">Profile</a></li>
+          <li class="disabled"><a href="">Disabled</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
       Dropdown <span class="caret"></span>
     </a>
-    <ul class="dropdown-menu">
-      <li><a href="">Action</a></li>
-      <li><a href="">Another action</a></li>
-      <li><a href="">Something else here</a></li>
-      <li class="divider"></li>
-      <li><a href="">Separated link</a></li>
-    </ul>
-  </li>
-</ul>
-    <div class="col-md-4">
-      
-      <h3 id="list">Nav Lists</h3>
-        
-      <div class="well" style="padding: 8px 0;">
-        <ul class="nav nav-list">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="">Library</a></li>
-          <li><a href="">Applications</a></li>
-          <li class="divider"></li>
-          <li><a href="">Help</a></li>
+            <ul class="dropdown-menu">
+              <li><a href="">Action</a></li>
+              <li><a href="">Another action</a></li>
+              <li><a href="">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="">Separated link</a></li>
+            </ul>
+          </li>
         </ul>
+        <div class="col-md-4">
+
+          <h3 id="list">Nav Lists</h3>
+
+          <div class="well" style="padding: 8px 0;">
+            <ul class="nav nav-list">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="">Library</a></li>
+              <li><a href="">Applications</a></li>
+              <li class="divider"></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
 
-<!-- Labels
+      <!-- Labels
 ================================================== -->
 
-  <div class="row">
-    <div class="col-md-4">
-      <h3 id="labels">Labels</h3>
-      <span class="label label-default">Default</span>
-      <span class="label label-success">Success</span>
-      <span class="label label-warning">Warning</span>
-      <span class="label label-danger">Danger</span>
-      <span class="label label-info">Info</span>
-    </div>
-    <div class="col-md-4">
-      <h3 id="badges">Badges</h3>
-      <span class="badge">Default</span>
-    </div>
-    <div class="col-md-4">
-      <h3 id="badges">Progress bars</h3>
-      <div class="progress">
-        <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3 id="labels">Labels</h3>
+          <span class="label label-default">Default</span>
+          <span class="label label-success">Success</span>
+          <span class="label label-warning">Warning</span>
+          <span class="label label-danger">Danger</span>
+          <span class="label label-info">Info</span>
+        </div>
+        <div class="col-md-4">
+          <h3 id="badges">Badges</h3>
+          <span class="badge">Default</span>
+        </div>
+        <div class="col-md-4">
+          <h3 id="badges">Progress bars</h3>
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
+          </div>
+
+        </div>
+
+
       </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-success" style="width: 40%"></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
-      </div>
-      
-    </div>
-    
-    
-  	</div>
-  <br>
-  
-  
-<!-- Panel & ListGroups
+      <br>
+
+
+      <!-- Panel & ListGroups
 ================================================== -->
-<hr>
+      <hr>
 
-  <h2 id="panels">Bootstrap 3 Panels</h2>
-  
-  <div class="row">
-    <div class="col-md-4">
-      <div class="panel panel-default">
-  		<div class="panel-heading">Panel heading</div>
-  		<div class="panel-body">Hello. This is the Panel content.</div>
-	  </div>
-    </div>
-    <div class="col-md-4">
-      <div class="panel panel-primary">
-  		<div class="panel-heading">Panel primary</div>
-  		<div class="panel-body">Panels are new in BS3.</div>
-	  </div>
-    </div>
-    <div class="col-md-4">
-      <div class="panel panel-success">
-  		<div class="panel-heading">Panel success</div>
-  		<div class="panel-body">You can use contextual classes.</div>
-	  </div>
-    </div>
-  </div>
-  
+      <h2 id="panels">Bootstrap 3 Panels</h2>
 
-<!-- ListGroups
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">Hello. This is the Panel content.</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Panel primary</div>
+            <div class="panel-body">Panels are new in BS3.</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Panel success</div>
+            <div class="panel-body">You can use contextual classes.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ListGroups
 ================================================== -->
-<hr>
+      <hr>
 
-  <h2 id="panels">Bootstrap 3 List Groups</h2>
-  
-  <div class="row">
-    <div class="col-md-4">
-      <ul class="list-group">
-        <li class="list-group-item">List item 1</li>
-        <li class="list-group-item">List item 2</li>
-        <li class="list-group-item">Mobile-first</li>
-        <li class="list-group-item">Responsive</li>
-        <li class="list-group-item">Lightweight</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <ul class="list-group">
-        <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 1</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 2</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Mobile-first</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Responsive</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Lightweight</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <div class="list-group">
-        <a href="#" class="list-group-item active">
+      <h2 id="panels">Bootstrap 3 List Groups</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-group">
+            <li class="list-group-item">List item 1</li>
+            <li class="list-group-item">List item 2</li>
+            <li class="list-group-item">Mobile-first</li>
+            <li class="list-group-item">Responsive</li>
+            <li class="list-group-item">Lightweight</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-group">
+            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 1</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 2</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Mobile-first</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Responsive</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Lightweight</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
           Linked list group
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-        <a ng-href="#" class="list-group-item">Dapibus ac facilisis in
+            <a ng-href="#" class="list-group-item">Dapibus ac facilisis in
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-        <a ng-href="#" class="list-group-item">Morbi leo risus
+            <a ng-href="#" class="list-group-item">Morbi leo risus
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-        <a ng-href="#" class="list-group-item">Porta ac consectetur ac
+            <a ng-href="#" class="list-group-item">Porta ac consectetur ac
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-        <a ng-href="#" class="list-group-item">Vestibulum at eros
+            <a ng-href="#" class="list-group-item">Vestibulum at eros
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  
-  
-<!-- Well Sizes
-================================================== -->
-<hr>
-  <h2>Well Sizes</h2>
-  <div class="row">
-    <div class="col-lg-12">
-    	 <div class="well well-sm"> 
-          .well-sm
-        </div>     	
-        <div class="well"> 
-          .well
-        </div>
-    	 <div class="well well-lg"> 
-          .well-lg
-        </div>
-    </div>
-  </div>
-<hr>
 
-  
-</section>
-  <hr>
-  <a href="http://www.bootply.com/65566">Edit on Bootply</a>
-  <hr>
-</div>
-  <script src="js/jquery.js"></script>  
-  <!--<script src="bootstrap/dist/js/bootstrap.min.js"></script>-->
-  <script src="app/components/angular/angular.js"></script>
-  <script src="app/components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-  
-  </body>
+
+      <!-- Well Sizes
+================================================== -->
+      <hr>
+      <h2>Well Sizes</h2>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="well well-sm">
+            .well-sm
+          </div>
+          <div class="well">
+            .well
+          </div>
+          <div class="well well-lg">
+            .well-lg
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+  </section>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="build.js"></script>
+
+</body>
+
 </html>

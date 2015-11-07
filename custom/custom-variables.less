@@ -2,6 +2,9 @@
 // Variables
 // --------------------------------------------------
 
+// FIS Colors
+
+@fis-highlight: #e1efcd;
 
 //== Colors
 //
@@ -26,9 +29,9 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:              white;
 //** Global text color on `<body>`.
-@text-color:            @gray;
+@text-color:            @gray-darker;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -107,9 +110,9 @@
 @border-radius-small:       3px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    #fff;
+@component-active-color:    @text-color;
 //** Global background color for active items (e.g., navs or dropdowns).
-@component-active-bg:       @brand-primary;
+@component-active-bg:       @fis-highlight;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 @caret-width-base:          4px;
@@ -678,9 +681,9 @@
 //** Background color of single list items on hover
 @list-group-hover-bg:           @gray-lighter;
 //** Text color of active list items
-@list-group-active-color:       @text-color;
+@list-group-active-color:       @component-active-color;
 //** Background color of active list items
-@list-group-active-bg:          lighten(@brand-success, 30%);
+@list-group-active-bg:          @component-active-bg;
 //** Border color of active list elements
 @list-group-active-border:      @list-group-active-bg;
 //** Text color for content within active list items
@@ -760,7 +763,7 @@
 //
 //##
 
-@well-bg:                     @gray-light;
+@well-bg:                     @gray-lighter;
 @well-border:                 transparent;
 
 
