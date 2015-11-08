@@ -1,3 +1,5 @@
+// TODO: Add stuff to the template cache
+// TODO:Add momentr, lodash, ng-moment, and other stuff
 var App;
 (function (App) {
     angular.module("app", ['ngRoute', 'ngAnimate'])

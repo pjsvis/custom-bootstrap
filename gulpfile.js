@@ -6,7 +6,7 @@ var debug = require('gulp-debug');
 var inject = require('gulp-inject');
 var tsc = require('gulp-typescript');
 var tslint = require('gulp-tslint');
-    
+
 gulp.task('bootstrap', function () {
     return gulp.src('custom/custom-bootstrap.less')
         .pipe(sourcemaps.init())
@@ -18,22 +18,20 @@ gulp.task('bootstrap', function () {
 // Lint all custom TypeScript files.
 gulp.task('ts-lint', function () {
     return gulp.src('app/**/*.ts')
-    .pipe(tslint())
-    .pipe(tslint.report('prose'));
+        .pipe(tslint())
+        .pipe(tslint.report('prose'));
 });
 
 // Compile TypeScript and include references to library and app .d.ts files.
-// gulp.task('compile-ts', function () {
-                        
-//     var tsResult = gulp.src('app/**/*.ts')
-//                        .pipe('app/**/*.js')
-//                        .pipe('');
+gulp.task('compile-ts', function () {
 
-//         tsResult.dts.pipe(gulp.dest('build.js'));
-//         return tsResult.js
-//                         .pipe(sourcemaps.write('.'))
-//                         .pipe(gulp.dest('build.js'));
-// });
+    return gulp.src('app/app.ts')
+        .pipe(tsc({
+            noImplicitAny: true,
+            out: 'build.js'
+        }))
+        .pipe(gulp.dest('app'))
+});
 
 // NOTE: We do the watching from VSC
 // Watch for file changes
@@ -41,8 +39,8 @@ gulp.task('ts-lint', function () {
 //     gulp.watch([config.allTypeScript], ['bootstrap', 'ts-lint', 'compile-ts']);
 // });
 
+gulp.task('default', ['bootstrap', 'compile-ts']);
 //gulp.task('default', ['bootstrap', 'ts-lint', 'compile-ts']);
-gulp.task('default', ['bootstrap', 'ts-lint']);
 
 
 

@@ -4,7 +4,9 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.js'],
+    // tells webpack to query these directories for modules
+    modulesDirectories: ["./app/components", "node_modules"]
   },
   module: {
     loaders: [

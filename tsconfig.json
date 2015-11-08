@@ -4,6 +4,9 @@
         "module": "commonjs",
         "sourceMap": true,
         "watch": true,
-        "out": "build.js"
-    }
+        "out": "tsBuild.js"
+    },
+    "files": [
+        "./app/app.ts"  
+    ]
 }
