@@ -1,12 +1,19 @@
 {
     "compilerOptions": {
-        "target": "ES5",
+        "target": "es5",
+       "experimentalDecorators": true,
+       // "declarationFiles": true,
+       // "noExternalResolve": false,
+        //"noImplicityAny": false,
+        "noEmitOnError": false,
         "module": "commonjs",
         "sourceMap": true,
         "watch": true,
-        "out": "tsBuild.js"
+        "out": "app/build.js"      
     },
-    "files": [
-        "./app/app.ts"  
+
+    "filesGlob": [
+        ".app/**/*.ts",
+        "!./node_modules/**/*.ts"
     ]
 }

@@ -21,7 +21,7 @@
       "commit": "eb59a40d3c2f3257e34ec2ede181046230814a41"
     },
     "node/node.d.ts": {
-      "commit": "eb59a40d3c2f3257e34ec2ede181046230814a41"
+      "commit": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
     },
     "orchestrator/orchestrator.d.ts": {
       "commit": "eb59a40d3c2f3257e34ec2ede181046230814a41"
@@ -52,6 +52,9 @@
     },
     "angularjs/angular-route.d.ts": {
       "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
+    },
+    "gulp-typescript/gulp-typescript.d.ts": {
+      "commit": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
     }
   }
 }

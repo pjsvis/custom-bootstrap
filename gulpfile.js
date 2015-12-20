@@ -1,3 +1,4 @@
+///<reference path="typings/tsd.d.ts"/>
 // Less configuration
 var gulp = require('gulp');
 var less = require('gulp-less');
@@ -25,11 +26,14 @@ gulp.task('ts-lint', function () {
 // Compile TypeScript and include references to library and app .d.ts files.
 gulp.task('compile-ts', function () {
 
-    return gulp.src('app/app.ts')
+var src=['app/app.ts', 'app/**/*.ts']
+    return gulp.src(src)
         .pipe(tsc({
+            target: "es5",
+            outFile: "build.js",
             noImplicitAny: true,
-            out: 'build.js'
-        }))
+            
+        }))  // tsconfig handles the options
         .pipe(gulp.dest('app'))
 });
 

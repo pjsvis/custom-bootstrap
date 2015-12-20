@@ -1,16 +1,28 @@
-module App.Services.SupportService {
-	import HttpHelper = App.Services.HttpHelper
+///<reference path="../../typings/tsd.d.ts"/>
+///<reference path="../services/HttpHelper.ts"/>
 
-	angular.module('app').factory('SupportService', function(HttpHelper: HttpHelper.IHttpHelper) {
-		var fac = {};
+"use strict";
 
-		return fac;
-	})
-}
 
-module App.Controllers.SupportController {
-	angular.module('app')
-		.controller('SupportController', function(SupportService) {
-			var vm = this;
-		})
-}
+    interface IStuff {
+        Id: number;
+        Name: string;
+    }
+
+    interface ISupportService {
+        getStuff: () => angular.IHttpPromise<IStuff>;
+    }
+
+    angular.module("app").factory("SupportService", function(HttpHelper: IHttpHelper): ISupportService {
+        return {
+            getStuff: function(): angular.IHttpPromise<IStuff> { return HttpHelper.get("Stuff"); }
+        };
+    });
+
+    angular.module("app")
+        .controller("SupportController", function(SupportService: ISupportService) {
+            let vm = this;
+            SupportService.getStuff().then(function(response: angular.IHttpPromiseCallbackArg<any>) {
+                let data: IStuff = response.data;
+            });
+        });
